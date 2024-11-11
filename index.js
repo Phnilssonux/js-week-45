@@ -1,3 +1,20 @@
+function atm() {
+    const message = parseFloat(
+        prompt(
+        "Select a choice 1.) See balance 2.) Deposit 3.) Withdraw 4.) Get account name 5.) Exit"
+    )
+ );
+
+switch (message) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+}
+}   
+
+
 const account = {
     accountName: "John Smith",
     balance: 0,
@@ -23,7 +40,7 @@ const account = {
         } else {
             this.balance -= amount;
             console.log(`$${amount} has been withdrawn. New balance is: $${this.balance}`);
-        }
+    }
     },
     
     getAccountName: function() {
